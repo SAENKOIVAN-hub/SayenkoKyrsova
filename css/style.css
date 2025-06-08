@@ -1,0 +1,183 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 80px;
+    background-color: #fe804e;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1;
+    position: relative;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: end;
+    gap: 75px;
+    font-size: 20px;
+}
+
+header div a{
+    text-decoration: none;
+    color: #0c5c8a;
+    transition: all 0.4s ease-in-out;
+}
+
+header div a:hover{
+    font-size: 22px;
+    color: rgb(36, 34, 34);
+}
+
+.stash--burger-classic-duotone {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m1 5a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+#burger{
+    cursor: pointer;
+}
+
+#burgerMenu{
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    right: 0%;
+    background-color: #b2a48e;
+    overflow: auto;
+    height: 0;
+    transition: height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#burgerMenu.active{
+    height: 300px;
+}
+
+main{
+    flex: 1;
+    background-color: #fbd8bd;
+    overflow-y: auto;
+}
+
+main h1{
+    color: rgb(36, 34, 34);
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer{
+    height: 60px;
+    background-color: #b2a48e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #0c5c8a;
+}
+
+footer a{
+    color: #0c5c8a;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+footer p{
+    position: relative;
+    top: 9px;
+}
+
+footer a:hover{
+    font-size: 22px;
+    color: rgb(36, 34, 34);
+}
+
+.checkUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    height: auto;
+}
+
+.checkUser p{
+    margin: 0;
+    text-align: center;
+}
+
+.checkUser button{
+    height: 30px;
+    min-width: 100px;
+    max-width: 200px;
+    font-size: 18px;
+    width: 40%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    background-color: #fe804e;
+    border: solid 2px #164274;
+}
+
+.checkUser button:hover{
+    background-color: #164274;
+    border: solid 2px #fe804e;
+    color: white;
+}
+
+
+@media screen and (min-width: 991px) {
+    #burger, #burgerMenu{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 991px) {
+    header div:first-of-type, footer p{
+        display: none;
+    }
+
+    #burgerMenu{
+        left: 55%;
+        right: 0%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header div:first-of-type, footer p{
+        display: none;
+    }
+
+    #burgerMenu{
+        left: 0%;
+    }
+    
+    footer{
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    footer a{
+        font-size: 18px;
+    }
+}
