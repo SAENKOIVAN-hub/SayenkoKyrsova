@@ -21,6 +21,6 @@ form.addEventListener("submit", function(event) {
             password
         }))
 
-        window.location.href = "/html/main.html"
+        window.location.href = "html/main.html"
     }
 })

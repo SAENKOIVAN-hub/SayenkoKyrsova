@@ -1,27 +1,27 @@
 const inDeatail = [
     {
-        image: "/images/Golovna.jpg",
+        image: "images/Golovna.jpg",
         title: "Головна сторінка",
         description: "Перейдіть на головну сторінку, щоб побачити актуальну інформацію на поточний час! Тут ви знайдете останні оновлення, популярні розділи сайту, а також найцікавіші матеріали, які ми підготували саме для вас.",
-        link: "../html/main.html"
+        link: "html/main.html"
     },
     {
         image: "/images/Photo.webp",
         title: "Галерея картинок",
         description: "Перейдіть, щоб побачити нашу галерею картинок з університетами! Ви зможете насолодитися візуальною колекцією університетів та їх корпусів.",
-        link: "../html/gallery.html"
+        link: "html/gallery.html"
     },
     {
-        image: "/images/News.jpg",
+        image: "images/News.jpg",
         title: "Новини",
         description: "Залишайтесь в курсі останніх подій та новин у світі університетів! Читайте про важливі ініціативи, нові проекти та досягнення наших вищих навчальних закладів.",
-        link: "../html/news.html"
+        link: "html/news.html"
     },
     {
-        image: "/images/Contact.jpg",
+        image: "images/Contact.jpg",
         title: "Контакти",
         description: "Контакти нашого сайту, щоб зв'язатися з нами! Ви можете написати нам листа, зателефонувати або залишити відгук. Ми завжди відкриті до співпраці, зворотного зв’язку та ваших ідей!",
-        link: "../html/contacts.html"
+        link: "html/contacts.html"
     }
 ]
 

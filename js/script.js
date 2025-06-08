@@ -16,7 +16,7 @@ function updateUser() {
         })
 
     } else {
-        $checkUsers.html(`<a href="/html/auth.html">Авторизація</a>`)
+        $checkUsers.html(`<a href="html/auth.html">Авторизація</a>`)
     }
 }
 updateUser()
